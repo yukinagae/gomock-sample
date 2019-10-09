@@ -1,4 +1,4 @@
-package main
+package user
 
 // User is a struct got by a repository
 type User struct {

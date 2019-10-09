@@ -1,10 +1,14 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+
+	"github.com/yukinagae/gomock-sample/user"
+)
 
 func main() {
-	var repo Repository
-	repo = UserRepository{}
+	var repo user.Repository
+	repo = user.UserRepository{}
 	user := repo.Get(1)
 	fmt.Printf("%v\n", user)
 }
